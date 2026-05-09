@@ -27,6 +27,7 @@ The tool is designed for MVC-based 3D video sources that are difficult to use di
 - [DaVinci Resolve Workflow](#davinci-resolve-workflow)
 - [JVC MVC MP4 / MOV Support](#jvc-mvc-mp4--mov-support)
 - [Why This Tool Exists](#why-this-tool-exists)
+- [Workshop and Festival Use](#workshop-and-festival-use)
 - [Technical Notes](#technical-notes)
 - [Current Limitations](#current-limitations)
 - [Author](#author)
@@ -252,6 +253,16 @@ The goal is not only playback, but also:
 - stereoscopic research
 - preservation of older 3D camera material
 - conversion to modern immersive media formats
+---
+## Workshop and Festival Use
+
+`mvc2stereo` has been used in practical stereoscopic 3D education and production workflows, including the **New Media Workshop / 3D Masterclass** connected to the **Busan International Short Film Festival**.
+
+More information:
+
+[3D Masterclass in Busan](https://lab3d.kw.ac.kr/3d-masterclass-in-busan/)
+
+The tool supports this type of educational workflow by making MVC 3D camera footage easier to convert, review, edit, and project in modern post-production environments.
 ---
 ## Technical Notes
 `mvc2stereo` uses the JM reference MVC decoder internally for MVC decoding.
