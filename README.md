@@ -1,5 +1,3 @@
-Copy everything below into README.md:
-
 # mvc2stereo
 `mvc2stereo` is a macOS command-line tool for converting MVC stereoscopic 3D video into practical modern stereo formats.
 It was developed by **Alaric Hamacher** for real-world stereoscopic 3D production, restoration, archiving, and post-production workflows.
