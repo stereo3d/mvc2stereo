@@ -2,6 +2,37 @@
 `mvc2stereo` is a macOS command-line tool for converting MVC stereoscopic 3D video into practical modern stereo formats.
 It was developed by **Alaric Hamacher** for real-world stereoscopic 3D production, restoration, archiving, and post-production workflows.
 The tool is designed for MVC-based 3D video sources that are difficult to use directly in current editing software.
+
+---
+
+## Table of Contents
+
+- [Purpose](#purpose)
+- [Main Applications](#main-applications)
+- [Supported Output Modes](#supported-output-modes)
+  - [Side-by-Side ProRes](#side-by-side-prores)
+  - [Dual ProRes](#dual-prores)
+  - [MV-HEVC](#mv-hevc)
+- [Supported Input Formats](#supported-input-formats)
+- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Basic Usage](#basic-usage)
+- [Audio Options](#audio-options)
+- [Keeping Temporary Files](#keeping-temporary-files)
+- [Example Workflows](#example-workflows)
+  - [Convert AVCHD 3D Footage for Editing](#convert-avchd-3d-footage-for-editing)
+  - [Create Left and Right Eye Master Files](#create-left-and-right-eye-master-files)
+  - [Create an MV-HEVC Stereo Movie](#create-an-mv-hevc-stereo-movie)
+  - [Test Only the Beginning of a File](#test-only-the-beginning-of-a-file)
+- [DaVinci Resolve Workflow](#davinci-resolve-workflow)
+- [JVC MVC MP4 / MOV Support](#jvc-mvc-mp4--mov-support)
+- [Why This Tool Exists](#why-this-tool-exists)
+- [Technical Notes](#technical-notes)
+- [Current Limitations](#current-limitations)
+- [Author](#author)
+- [License](#license)
+
+---
 ---
 ## Purpose
 Many older stereoscopic 3D cameras recorded video using **MVC** — **Multiview Video Coding**.
