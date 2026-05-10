@@ -31,6 +31,7 @@ The tool is designed for MVC-based 3D video sources that are difficult to use di
 - [Technical Notes](#technical-notes)
 - [Current Limitations](#current-limitations)
 - [Author](#author)
+- [Third-Party Code Notice](#third-party-code-notice)
 - [License](#license)
 
 ---
@@ -279,6 +280,14 @@ For JVC `.MP4` / `.MOV` MVC files, the tool currently still relies on FFmpeg for
 ## Author
 `mvc2stereo` was written by **Alaric Hamacher**.
 The tool was developed from practical stereoscopic 3D production, post-production, and archival needs.
+---
+## Third-Party Code Notice
+
+`mvc2stereo` includes modified code derived from the JM H.264/AVC reference decoder.
+
+The JM reference software includes ISO/IEC and ITU copyright and warranty notices. These notices are included in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
+The JM notice grants a free license to the software module and modifications, but it does not grant patent rights. Users intending to use the software in products should review the applicable patent and licensing situation.
 ---
 ## License
 Copyright © Alaric Hamacher.
