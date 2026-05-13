@@ -17,6 +17,7 @@ The tool is designed for MVC-based 3D video sources that are difficult to use di
 - [Installation](#installation)
 - [Dependencies](#dependencies)
 - [Basic Usage](#basic-usage)
+- [Batch Conversion Script](#batch-conversion-script)
 - [Audio Options](#audio-options)
 - [Keeping Temporary Files](#keeping-temporary-files)
 - [Example Workflows](#example-workflows)
@@ -144,6 +145,92 @@ Create MV-HEVC:
 ```bash
 mvc2stereo input.MTS --mode mv-hevc
 ```
+---
+
+## Batch Conversion Script
+
+A simple batch script is provided for converting all supported MVC files inside one folder.
+
+The script uses the Homebrew-installed `mvc2stereo` binary:
+
+```bash
+TOOL="mvc2stereo"
+```
+
+This means `mvc2stereo` must already be installed and available in the terminal:
+
+```bash
+brew tap stereo3d/tools
+brew install stereo3d/tools/mvc2stereo
+```
+
+Make the script executable:
+
+```bash
+chmod +x batch_mvc2stereo.sh
+```
+
+Run it on a folder:
+
+```bash
+./batch_mvc2stereo.sh /path/to/folder
+```
+
+If no folder is given, the current folder is used:
+
+```bash
+./batch_mvc2stereo.sh
+```
+
+The script currently scans for the following file extensions, in upper and lower case:
+
+```text
+.MTS
+.mts
+.M2TS
+.m2ts
+.MP4
+.mp4
+.MOV
+.mov
+```
+
+The default output mode is:
+
+```bash
+MODE="mv-hevc"
+```
+
+You can edit the script and change this line to one of:
+
+```bash
+MODE="dual-prores"
+MODE="sbs-prores"
+MODE="mv-hevc"
+```
+
+The script automatically skips files when the expected output already exists.
+
+Expected output names:
+
+```text
+dual-prores  → input_L.mov and input_R.mov
+sbs-prores   → input_SBS.mov
+mv-hevc      → input_MVHEVC.mov
+```
+
+A log file is created automatically:
+
+```text
+batch_YYYYMMDD_HHMMSS.log
+```
+
+Example:
+
+```bash
+./batch_mvc2stereo.sh /Volumes/media/3D/my_folder
+```
+
 ---
 ## Audio Options
 By default, audio is preserved.
