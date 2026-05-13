@@ -3,6 +3,8 @@
 It was developed by **Alaric Hamacher** for real-world stereoscopic 3D production, restoration, archiving, and post-production workflows.
 The tool is designed for MVC-based 3D video sources that are difficult to use directly in current editing software.
 
+<img src="images/image1.jpg" width="600">
+
 ---
 
 ## Table of Contents
